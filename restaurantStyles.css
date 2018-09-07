@@ -10,19 +10,21 @@ body {
 header {
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  background-color: #c0b9dd;
+  text-align: center;
 }
 
 nav {
-  background-color: #80a1d4;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 a {
   text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: #C33149;
 }
 
 a:visited {
-  color: #75c9c8;
+  color: #1E555C;
 }
 
 a:hover {
@@ -30,5 +32,6 @@ a:hover {
 }
 
 footer {
-  background-color: #c0b9dd;
+  background-color: #1E555C;
+  text-align: center;
 }
