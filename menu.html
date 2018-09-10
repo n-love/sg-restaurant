@@ -5,127 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zoey's | Menu</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <style>
       /* All styles for menu */
       body {
-        background-color: #FAEDE8;
+
       }
 
       section {
-        width: 90%;
-        margin: 0 auto;
+        margin: 2rem 0;
       }
 
       article {
-        width: 30%;
-        display: inline-block;
         text-align: center;
       }
 
-      table {
-        margin: 0 auto;
-        width: 80%;
-        border: 1px solid black;
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
       }
 
-      th {
-        text-align: center;
+      /* nav {
+        background-color: white;
+      } */
+
+      h3 {
+        font-family: "Playfair Display", serif;
+        font-weight: 900;
+        text-decoration: underline;
+        text-decoration-style: dotted;
       }
 
-      tr:nth-child(even){
+      h4 {
+        font-style: italic;
+      }
+
+      /* tr:nth-child(even){
         background-color: rgba(0, 0, 0, 0.2);
       }
 
       tr:nth-child(odd){
-        background-color: rgba(255, 255, 255, 0.2);
-      }
+        background-color: rgba(255, 255, 255, 0.8);
+      } */
+
     </style>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
   </head>
   <body>
     <main>
       <header>
         <h1>Zoey's</h1>
       </header>
-      <hr>
 
       <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact Us</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i></a></li>
+          <li class="nav-item"><a href="menu.html" class="nav-link active">Menu</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
       </nav>
-      <hr>
 
-      <section>
-        <article>
-          <h3>Burger and Fries</h3>
-          <h4>An American Classic!</h4>
-          <p>Your choice - with or without cheese. Pickle, onion, tomato, and lettuce. Served with our famous thick cut french fries</p>
-          <p>$7.95</p>
-        </article>
-        <article>
-          <h3>Hot Dog and Chips</h3>
-          <h4>A Summer Classic!</h4>
-          <p>Your choice - white or wheat bun. Relish, mustard, and ketchup. Served with our house-made chips</p>
-          <p>$7.95</p>
-        </article>
-        <article>
-          <h3>Italian Sausage and Peppers</h3>
-          <h4>An All-Time Favorite!</h4>
-          <p>Your choice - mild or spicy. Cole Slaw. Served with garlic mashers</p>
-          <p>$10.95</p>
-        </article>
-        <article>
-          <h3>Tenderloin Sandwich and Chips</h3>
-          <h4>Really Hits the Spot!</h4>
-          <p>Plain or Sesame Seed Bun. Pickle, onion, tomato, and lettuce. Served with our house-made chips</p>
-          <p>$8.95</p>
-        </article>
-        <article>
-          <h3>House Salad</h3>
-          <h4>On the Lighter Side!</h4>
-          <p>Your choice - with or without cheese. Iceburg lettuce, tomatoes, peppers. Thousand Island or Ranch Dressing. Served with a dinner roll.</p>
-          <p>$6.95</p>
-        </article>
-        <article>
-          <h3>Brisket Sandwich and Fries</h3>
-          <h4>A Taste of Texas!</h4>
-          <p>Smoked Brisket on thick-cut Texas Toast. Cole Slaw. Served with our famous thick cut french fries</p>
-          <p>$7.95</p>
-        </article>
+      <section class="container">
+        <div class="row flex">
+          <article class="col-lg-4 col-sm-6">
+            <h3>Burger and Fries</h3>
+            <h4>An American Classic!</h4>
+            <p>Your choice - with or without cheese. Pickle, onion, tomato, and lettuce. Served with our famous thick cut french fries</p>
+            <p>$7.95</p>
+          </article>
+          <article class="col-lg-4 col-sm-6">
+            <h3>Hot Dog and Chips</h3>
+            <h4>A Summer Classic!</h4>
+            <p>Your choice - white or wheat bun. Relish, mustard, and ketchup. Served with our house-made chips</p>
+            <p>$7.95</p>
+          </article>
+          <article class="col-lg-4 col-sm-6">
+            <h3>Italian Sausage and Peppers</h3>
+            <h4>An All-Time Favorite!</h4>
+            <p>Your choice - mild or spicy. Cole Slaw. Served with garlic mashers</p>
+            <p>$10.95</p>
+          </article>
+          <article class="col-lg-4 col-sm-6">
+            <h3>Tenderloin Sandwich and Chips</h3>
+            <h4>Really Hits the Spot!</h4>
+            <p>Plain or Sesame Seed Bun. Pickle, onion, tomato, and lettuce. Served with our house-made chips</p>
+            <p>$8.95</p>
+          </article>
+          <article class="col-lg-4 col-sm-6">
+            <h3>House Salad</h3>
+            <h4>On the Lighter Side!</h4>
+            <p>Your choice - with or without cheese. Iceburg lettuce, tomatoes, peppers. Thousand Island or Ranch Dressing. Served with a dinner roll.</p>
+            <p>$6.95</p>
+          </article>
+          <article class="col-lg-4 col-sm-6">
+            <h3>Brisket Sandwich and Fries</h3>
+            <h4>A Taste of Texas!</h4>
+            <p>Smoked Brisket on thick-cut Texas Toast. Cole Slaw. Served with our famous thick cut french fries</p>
+            <p>$7.95</p>
+          </article>
+        </div>
       </section>
-      <section>
-        <table>
-          <th>Beverages</th>
-          <tr>
-            <td>Root Beer</td>
-            <td>$3.00</td>
-          </tr>
-          <tr>
-            <td>Bottled Water</td>
-            <td>$1.25</td>
-          </tr>
-          <tr>
-            <td>Lemonade</td>
-            <td>$1.00</td>
-          </tr>
-          <tr>
-            <td>Iced Tea</td>
-            <td>$1.25</td>
-          </tr>
+
+      <section class="container">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th colspan="2">Beverages</th>
+            </tr>
+            <tr>
+              <td>Root Beer</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Bottled Water</td>
+              <td>$1.25</td>
+            </tr>
+            <tr>
+              <td>Lemonade</td>
+              <td>$1.00</td>
+            </tr>
+            <tr>
+              <td>Iced Tea</td>
+              <td>$1.25</td>
+            </tr>
+          </tbody>
         </table>
       </section>
-      <hr>
 
-      <footer>
+      <footer class="nav-fixed-bottom">
         <p>888 Border Collie Lane, Dallas, TX 75201</p>
         <p>(214)555-5555</p>
       </footer>
     </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
