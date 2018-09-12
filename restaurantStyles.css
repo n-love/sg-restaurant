@@ -2,6 +2,8 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #FAEDE8;
+  color: #1E555C;
 }
 
 .noscript {
@@ -17,9 +19,11 @@ body {
  }
 
 header {
+  background-color: white;
+  color: #C33149;
   width: 100%;
   padding: .25rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif; /*add text shadow?*/
   font-weight: 900;
   font-size: 5rem;
   letter-spacing: .75rem;
@@ -29,16 +33,24 @@ header {
 }
 
 nav {
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  background-color: white;
+  padding: .1rem 0;
+  border-bottom: 1px solid #C33149;
+  border-top: 1px solid #C33149;
+}
+
+.active {
+  background-color: #EDB183 !important;
 }
 
 a {
   text-decoration: none;
   font-family: "Playfair Display", serif;
+  color: #C33149;
 }
 
 a:visited {
+  color: #EDB183;
 }
 
 a:hover {
@@ -46,6 +58,11 @@ a:hover {
 }
 
 footer {
+  background-image: url(https://source.unsplash.com/Gg5-K-mJwuQ);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 9rem;
   width: 100%;
   padding: 1.5rem 0;
   text-align: center;

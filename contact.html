@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zoey's | Contact Us</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <style>
       /* All styles for contact form */
-      body {
+      section {
+        padding: 3rem 0;
+        width: 60%;
+        margin: 0 auto;
       }
 
       label {
@@ -15,15 +22,18 @@
         display: block;
       }
 
-      section {
-        width: 60%;
-        margin: 0 auto;
+      .btn-primary {
+        background-color: #C33149;
+        border-color: #C33149;
+        font-family: "Playfair Display", serif;
+      }
+
+      .btn-primary:hover {
+        background-color: #D03953;
+        border-color: #D03953;
       }
     </style>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body>
     <main>
@@ -111,9 +121,8 @@
           <button type="submit" class="btn btn-primary">Send Request</button>
         </form>
       </section>
-      <hr>
 
-      <footer>
+      <footer class="fixed-bottom position-relative"> <!--white space at bottom-->
         <p>888 Border Collie Lane, Dallas, TX 75201</p>
         <p>(214)555-5555</p>
       </footer>

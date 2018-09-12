@@ -11,10 +11,6 @@
 
     <style>
       /* All styles for menu */
-      body {
-
-      }
-
       section {
         margin: 2rem 0;
       }
@@ -23,16 +19,14 @@
         text-align: center;
       }
 
-      .flex {
-        display: flex;
-        flex-wrap: wrap;
+      th {
+        letter-spacing: .1rem;
+        font-weight: 900;
+        font-size: 1.1rem;
       }
 
-      /* nav {
-        background-color: white;
-      } */
-
       h3 {
+        color: #C33149;
         font-family: "Playfair Display", serif;
         font-weight: 900;
         text-decoration: underline;
@@ -40,16 +34,17 @@
       }
 
       h4 {
+        color: #EDB183;
         font-style: italic;
       }
 
-      /* tr:nth-child(even){
-        background-color: rgba(0, 0, 0, 0.2);
+      tr:nth-child(even){
+        background-color: rgba(195, 49, 73, 0.5);
       }
 
       tr:nth-child(odd){
         background-color: rgba(255, 255, 255, 0.8);
-      } */
+      }
 
     </style>
 
@@ -69,7 +64,7 @@
       </nav>
 
       <section class="container">
-        <div class="row flex">
+        <div class="row">
           <article class="col-lg-4 col-sm-6">
             <h3>Burger and Fries</h3>
             <h4>An American Classic!</h4>
@@ -135,7 +130,7 @@
         </table>
       </section>
 
-      <footer class="nav-fixed-bottom">
+      <footer>
         <p>888 Border Collie Lane, Dallas, TX 75201</p>
         <p>(214)555-5555</p>
       </footer>
