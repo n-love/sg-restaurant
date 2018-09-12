@@ -1,0 +1,14 @@
+body:before {
+  content: "This page is best viewed with JavaScript enabled";
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  padding: 1rem 0;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+
+}

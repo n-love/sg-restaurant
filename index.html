@@ -10,29 +10,41 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <style>
-
+      /* All styles for main page */
       .jumbotron {
         background-color: rgba(195, 49, 73, 0.8);
         color: white;
+        height: 9rem;
+        padding: 1.5rem 0;
         border-radius: 0px;
         margin-bottom: 0px;
       }
 
-      /* #mainCarousel, .carousel-inner, .carousel-caption {
-        margin: 0 auto;
-        height: 50vh;
+      .carousel-inner .carousel-item img {
         width: 100%;
-      } */
+        max-height: 37.5rem;
+      }
+
+      .carousel-caption {
+        font-size: 1.5rem;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                     0px 8px 13px rgba(0,0,0,0.1),
+                     0px 18px 23px rgba(0,0,0,0.1);
+      }
+
+      #description {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      figcaption {
+        font-style: italic;
+      }
     </style>
-
-
   </head>
   <body>
     <noscript class="noscript container">
-      <div id="div100">
-        Looks like your JavaScript is disabled!
-        This website is best viewed with JavaScript enabled
-      </div>
+      <link rel="stylesheet" type="text/css" href="restaurantNoScript.css">
     </noscript>
 
     <main>
@@ -63,24 +75,24 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100 img-fluid" src="https://source.unsplash.com/2sPaYbFtnRA" alt="New Location Grand Opening!">
+            <img class="d-block w-100" src="https://source.unsplash.com/2sPaYbFtnRA" alt="New Location Grand Opening!">
             <div class="carousel-caption d-none d-md-block">
               <h5>New Location Grand Opening!</h5>
               <p>Doggo ipsum . . . </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100 img-fluid" src="https://source.unsplash.com/qMv1kz4Pqtk" alt="Unveiling New Seasonal Menu!">
+            <img class="d-block w-100" src="https://source.unsplash.com/hrlvr2ZlUNk" alt="Unveiling New Seasonal Menu!">
             <div class="carousel-caption d-none d-md-block">
               <h5>Unveiling New Seasonal Menu!</h5>
-              <p>Doggo ipsum special options this fall season . . . </p>
+              <p>Doggo ipsum breakfast of champs . . .</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100 img-fluid" src="https://source.unsplash.com/t7wg7BJU2-s" alt="Drink of the Month: SG Special Brew!">
+            <img class="d-block w-100" src="https://source.unsplash.com/jcLcWL8D7AQ" alt="Drink of the Month: SG Special Brew!">
             <div class="carousel-caption d-none d-md-block">
               <h5>Drink of the Month: SG Special Brew!</h5>
-              <p>Doggo ipsum . . . </p>
+              <p>Doggo ipsum an array of flavors . . .</p>
             </div>
           </div>
         </div>
@@ -94,15 +106,18 @@
         </a>
       </div>
 
-      <section class="container">
-        <figure>
-          <img src="https://source.unsplash.com/mx0DEnfYxic" width="400px" height="150px">
-        </figure>
+      <section class="container" id="description">
+        <div class="row">
+          <figure class="col-md-6">
+            <img src="https://source.unsplash.com/mx0DEnfYxic" class="img-fluid">
+            <figcaption>Our founder and good girl Zoey!</figcaption>
+          </figure>
 
-        <article>
-          <h3>Restaurant Description</h3>
-          <p>Doggo ipsum woofer floofs porgo what a nice floof big ol pupper I am bekom fat big ol pupper heckin good boys, clouds what a nice floof heckin good boys big ol shibe. You are doing me a frighten super chub pupper very taste wow doggorino, very jealous pupper pats I am bekom fat.  Pats I am bekom fat many pats the neighborhood pupper long water shoob corgo, very good spot heckin good boys dat tungg tho very taste wow. Heckin borking doggo wow very biscit fluffer, sub woofer wrinkler. Aqua doggo extremely cuuuuuute length boy borking doggo bork wrinkler, puggorino bork thicc shooberino. adorable doggo smol borking doggo with a long snoot for pats. Long bois borkdrive very good spot sub woofer heckin angery woofer, sub woofer you are doing me a frighten dat tungg tho. Heckin good boys and girls heckin angery woofer smol borking doggo with a long snoot for pats porgo, pats you are doing me the shock.</p>
-        </article>
+          <article class="col-md-6">
+            <h3>Restaurant Description</h3>
+            <p>Doggo ipsum woofer floofs porgo what a nice floof big ol pupper I am bekom fat big ol pupper heckin good boys, clouds what a nice floof heckin good boys big ol shibe. You are doing me a frighten super chub pupper very taste wow doggorino, very jealous pupper pats I am bekom fat.  Pats I am bekom fat many pats the neighborhood pupper long water shoob corgo, very good spot heckin good boys dat tungg tho very taste wow. Heckin borking doggo wow very biscit fluffer, sub woofer wrinkler. Aqua doggo extremely cuuuuuute length boy borking doggo bork wrinkler, puggorino bork thicc shooberino. adorable doggo smol borking doggo with a long snoot for pats. Long bois borkdrive very good spot sub woofer heckin angery woofer, sub woofer you are doing me a frighten dat tungg tho. Heckin good boys and girls heckin angery woofer smol borking doggo with a long snoot for pats porgo, pats you are doing me the shock.</p>
+          </article>
+        </div>
       </section>
 
       <footer>
